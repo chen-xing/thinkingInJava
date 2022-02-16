@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>thinkingInJava</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <link rel="icon" type="image/png" size="484X300" href="https://cdn.jsdelivr.net/gh/chen-xing/thinkingInJava/images/logo-icon.png">
+  <meta name="description" content="Description">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <!-- Theme: Simple (latest v0.x.x) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+<link rel="stylesheet alternate" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-defaults.css" title="Defaults">
+  <style type="text/css">
+	::-webkit-scrollbar {
+	width: 10px; /*对垂直流动条有效*/
+	height: 10px; /*对水平流动条有效*/
+	}
+
+	/*定义滚动条的轨道颜色、内阴影及圆角*/
+	::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	border-radius: 3px;
+	}
+
+
+	/*定义滑块颜色、内阴影及圆角*/
+	::-webkit-scrollbar-thumb{
+	border-radius: 7px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #E8E8E8;
+	}
+
+	/*定义两端按钮的样式*/
+	::-webkit-scrollbar-button {
+	display: none;
+	}
+
+	/*定义右下角汇合处的样式*/
+	::-webkit-scrollbar-corner {
+	display: none;
+	}
+	
+	 :root {
+	 --sidebar-width : 300px;
+	 
+    /* Reduce the font size */
+    --base-font-size: 14px;
+
+     /* Change the theme color hue */
+    --theme-hue: 195;
+
+    /* Change the sidebar bullets */
+    --sidebar-nav-link-before-content: '📝';
+	
+	/* Plugin: Zoom Image
+	--zoomimage-overlay-background: rgba(0, 0, 0, 0.875);
+	
+	
+  }
+  </style>
+</head>
+
+<body>
+  <div id="app"></div>
+  <!-- docsify-edit-on-github -->
+  <script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
+  <script>
+    // 离线支持
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
+
+    window.$docsify = {
+      name: '奔跑吧盘古',
+      repo: 'https://github.com/chen-xing/thinkingInJava',
+      maxLevel: 5,//最大支持渲染的标题层级
+      subMaxLevel: 2,
+	 
+      coverpage: true,//封面,_coverpage.md
+	  // 封面和内容单独显示
+	  onlyCover: false,
+      homepage: 'README.md',
+      loadSidebar: true,
+      auto2top: true,//切换页面后是否自动跳转到页面顶部
+      //ga: 'UA-138586553-1',
+      logo: 'https://cdn.jsdelivr.net/gh/chen-xing/thinkingInJava/images/logo-banner.png' ,
+      search: {
+        //maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+        paths: 'auto',
+        placeholder: '搜索',
+        noData: '找不到结果',
+        // 搜索标题的最大程级, 1 - 6
+        depth: 3,
+      },
+	  themeable: {
+          readyTransition : true, // default
+          responsiveTables: true  // default
+      },
+      plugins: [
+        EditOnGithubPlugin.create('https://github.com/chen-xing/thinkingInJava/blob/master/'),
+		// footer
+        function(hook) {
+          var ad = '';
+
+          var footer = [
+            '<hr/>',
+            '<footer>',
+            '<span><a href="https://beian.miit.gov.cn" target="_blank" style="color: inherit; font-weight: normal; text-decoration: none;">蒙ICP备19001663号</a><br/>&copy; 2021 Hutool Project. All Rights Reserved.</span>',
+            '<span><a href="https://docsify.js.org" target="_blank">Powered by docsify</a></span>',
+            '</footer>'
+          ].join('');
+		  footer='';
+
+          hook.afterEach(function(html) {
+            return ad + html + footer;
+          });
+        }
+      ]
+    }
+  </script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <!--Java代码高亮-->
+  <script src="//unpkg.com/prismjs/components/prism-java.js"></script>
+  <!--全文搜索,直接用官方提供的无法生效-->
+  <script src="https://cdn.bootcss.com/docsify/4.5.9/plugins/search.min.js"></script>
+  <!--谷歌统计
+  <script src="//unpkg.com/docsify" data-ga="UA-138586553-1"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/ga.js"></script>
+  -->
+  <!-- 复制到剪贴板 -->
+  <script src="//unpkg.com/docsify-copy-code"></script>
+  <!-- 图片缩放 -->
+  <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+  <!-- 返回顶部 -->
+  <script src="//unpkg.com/docsify-scroll-to-top/dist/docsify-scroll-to-top.min.js"></script>
+</body>
+
+</html>
