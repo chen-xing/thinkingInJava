@@ -8,7 +8,9 @@
   <meta name="description" content="Description">
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <!-- Theme: Simple (latest v0.x.x) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+<link rel="stylesheet alternate" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-defaults.css" title="Defaults">
   <style type="text/css">
 	::-webkit-scrollbar {
 	width: 10px; /*对垂直流动条有效*/
@@ -38,6 +40,24 @@
 	::-webkit-scrollbar-corner {
 	display: none;
 	}
+	
+	 :root {
+	 --sidebar-width : 300px;
+	 
+    /* Reduce the font size */
+    --base-font-size: 14px;
+
+     /* Change the theme color hue */
+    --theme-hue: 195;
+
+    /* Change the sidebar bullets */
+    --sidebar-nav-link-before-content: '📝';
+	
+	/* Plugin: Zoom Image
+	--zoomimage-overlay-background: rgba(0, 0, 0, 0.875);
+	
+	
+  }
   </style>
 </head>
 
@@ -52,11 +72,14 @@
     }
 
     window.$docsify = {
-      name: '人工博客',
+      name: '奔跑吧盘古',
       repo: 'https://github.com/chen-xing/thinkingInJava',
       maxLevel: 5,//最大支持渲染的标题层级
-      subMaxLevel: 3,
-      coverpage: false,//封面,_coverpage.md
+      subMaxLevel: 1,
+	 
+      coverpage: true,//封面,_coverpage.md
+	  // 封面和内容单独显示
+	  onlyCover: true,
       homepage: 'README.md',
       loadSidebar: true,
       auto2top: true,//切换页面后是否自动跳转到页面顶部
@@ -69,6 +92,10 @@
         noData: '找不到结果',
         // 搜索标题的最大程级, 1 - 6
         depth: 3,
+      },
+	  themeable: {
+          readyTransition : true, // default
+          responsiveTables: true  // default
       },
       plugins: [
         EditOnGithubPlugin.create('https://github.com/chen-xing/thinkingInJava/blob/master/'),
