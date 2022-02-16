@@ -76,7 +76,7 @@
       repo: 'https://github.com/chen-xing/thinkingInJava',
       maxLevel: 3,//最大支持渲染的标题层级
       subMaxLevel: 2,
-	 
+	  loadNavbar: true,
       coverpage: false,//封面,_coverpage.md
 	  // 封面和内容单独显示
 	  onlyCover: false,
@@ -106,10 +106,11 @@
           var footer = [
             '<hr/>',
             '<footer>',
-            '<span><a href="https://beian.miit.gov.cn" target="_blank" style="color: inherit; font-weight: normal; text-decoration: none;">蒙ICP备19001663号</a><br/>&copy; 2021 Hutool Project. All Rights Reserved.</span>',
-            '<span><a href="https://docsify.js.org" target="_blank">Powered by docsify</a></span>',
+            '<span><a href="https://www.94rg.com" target="_blank" style="color: inherit; font-weight: normal; text-decoration: none;">人工博客</span>',
+            '<span><a href="https://www.chenzhuofan.top" target="_blank">程序员导航网</a></span>',
             '</footer>'
           ].join('');
+		  
 		  footer='';
 
           hook.afterEach(function(html) {
