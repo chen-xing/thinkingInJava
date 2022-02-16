@@ -47,7 +47,6 @@
     - [并发容器总结](docs/java/Multithread/并发容器总结.md)
     - [并发编程基础知识](docs/java/Multithread/并发编程基础知识.md)
   - [springboot中实现多数据源](docs/java/springboot中实现多数据源.md)
-  - [SpringMVC启动过程详解](docs/java/SpringMVC启动过程详解.md)
   - [多线程系列](docs/java/多线程系列.md)
   - [如何实现跨浏览器共享cookies](docs/java/如何实现跨浏览器共享cookies.md)
   - [如何解决http请求返回结果中文乱码](docs/java/如何解决http请求返回结果中文乱码.md)
