@@ -1,6 +1,6 @@
 # github_action部署hugo
 
-## 1、github action脚本
+## 1、github_action脚本
 
 ```
 name: GitHubPages
