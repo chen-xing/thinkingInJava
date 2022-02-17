@@ -85,7 +85,7 @@
     - [druid连接泄露故障分析](docs/人工博客/druid连接泄露故障分析.md)
     - [freemarker_使用记录](docs/人工博客/freemarker_使用记录.md)
     - [freemarker语法](docs/人工博客/freemarker语法.md)
-    - [github_action 部署hugo](docs/人工博客/github_action 部署hugo.md)
+    - [github_action部署hugo](docs/人工博客/github_action部署hugo.md)
     - [Github_API_v3介绍文档](docs/人工博客/Github_API_v3介绍文档.md)
     - [git常用的操作](docs/人工博客/git常用的操作.md)
     - [git操作手册](docs/人工博客/git操作手册.md)
