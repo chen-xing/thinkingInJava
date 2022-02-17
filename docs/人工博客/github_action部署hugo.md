@@ -1,4 +1,4 @@
-# github_action 部署hugo
+# github_action部署hugo
 
 ## 1、github action脚本
 
