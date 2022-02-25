@@ -1,7 +1,0 @@
-- [返回上一级 [java]](docs/java/)
-- [collection](docs/java/collection/)
-  - [ArrayList-Grow](docs/java/collection/ArrayList-Grow.md)
-  - [ArrayList](docs/java/collection/ArrayList.md)
-  - [HashMap](docs/java/collection/HashMap.md)
-  - [Java集合框架常见面试题](docs/java/collection/Java集合框架常见面试题.md)
-  - [LinkedList](docs/java/collection/LinkedList.md)

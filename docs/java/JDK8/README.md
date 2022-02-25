@@ -1,5 +1,0 @@
-- [返回上一级 [java]](docs/java/)
-- [JDK8](docs/java/JDK8/)
-  - [Java8foreach指南](docs/java/JDK8/Java8foreach指南.md)
-  - [Java8Tutorial](docs/java/JDK8/Java8Tutorial.md)
-  - [Java8教程推荐](docs/java/JDK8/Java8教程推荐.md)
