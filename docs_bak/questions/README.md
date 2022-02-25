@@ -1,5 +1,0 @@
-- [返回上一级 [docs_bak]](docs_bak/)
-- [questions](docs_bak/questions/)
-  - [java-learning-path-and-methods](docs_bak/questions/java-learning-path-and-methods.md)
-  - [java-learning-website-blog](docs_bak/questions/java-learning-website-blog.md)
-  - [java-training-4-month](docs_bak/questions/java-training-4-month.md)
